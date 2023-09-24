@@ -34,14 +34,17 @@ export default function RootLayout({
       }}
     >
       <html lang="en">
+        <Topbar />
         <body className={`${roboto.variable} font-robo bg-dark-1 text-light-1`}>
-          <main className="flex flex-row">
+          <main className="flex flex-row justify-between">
             <LeftSidebar />
+
             <section className="main-container">
               <div className="w-full max-w-4xl">{children}</div>
             </section>
             <RightSidebar />
           </main>
+          <Bottombar />
         </body>
       </html>
     </ClerkProvider>

@@ -1,7 +1,16 @@
-import React from "react";
+"use client";
+import Image from "next/image";
+import { useUser } from "@clerk/nextjs";
+import Logo from "./Logo";
 
 const Topbar = () => {
-  return <div>Topbar</div>;
+  const { user, isSignedIn, isLoaded } = useUser();
+  const userImage = user?.imageUrl;
+  return (
+    <section className="topbar">
+      <div>Top Bar</div>
+    </section>
+  );
 };
 
 export default Topbar;

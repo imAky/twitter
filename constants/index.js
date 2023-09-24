@@ -31,6 +31,34 @@ export const sidebarLinks = [
   },
 ];
 
+export const bottombarLinks = [
+  {
+    imgURL: "/assets/home.svg",
+    route: "/",
+    label: "Home",
+  },
+  {
+    imgURL: "/assets/search.svg",
+    route: "/explore",
+    label: "Explore",
+  },
+  {
+    imgURL: "/assets/community.svg",
+    route: "/communities",
+    label: "Communities",
+  },
+  {
+    imgURL: "/assets/notificationsv1.svg",
+    route: "/notifications",
+    label: "Notifications",
+  },
+  {
+    imgURL: "/assets/messagev1.svg",
+    route: "/messages",
+    label: "Messages",
+  },
+];
+
 export const profileTabs = [
   { value: "threads", label: "Threads", icon: "/assets/reply.svg" },
   { value: "replies", label: "Replies", icon: "/assets/members.svg" },
